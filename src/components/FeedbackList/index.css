@@ -1,0 +1,36 @@
+.feedback-bg {
+    background-color: rgba(0,0,0,0.4); 
+    padding: 20px; 
+    border: 10px; 
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+    width: 60vw; 
+    border: 0px solid rgba(0,0,0,0.4); 
+    border-radius: 12px;
+
+} 
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.role {
+    margin: 0px; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 10px; 
+    color: #ffffff;
+} 
+
+.name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px; 
+    color: #ff6a95;
+
+} 
+.feedback {
+    color: #ffffff;
+}

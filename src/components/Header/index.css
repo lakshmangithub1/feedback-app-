@@ -1,0 +1,28 @@
+.main-container {
+    background-color: #030238; 
+    height: 100vh;
+    background-size: cover; 
+    margin: 0px; 
+    overflow-y: auto;
+}
+
+.main-head-bg {
+    background-color:  rgba(0,0,0,0.4); 
+    padding: 15px;
+    
+} 
+
+.main-head {
+    color:#ff6a95; 
+    font-size: 22px;
+    text-align: center; 
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.feedback-container {
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 20px;
+    align-items: center;
+}
