@@ -1,0 +1,40 @@
+.form-container {
+    background-color: #ffffff; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 15px; 
+    width: 60vw; 
+    border: 0px solid #ffffff; 
+    border-radius: 12px;
+} 
+
+.rate-head {
+    font-family: 'sans-serif'; 
+    
+} 
+
+input {
+    width: 40vw; 
+    outline: none;
+    border: 0.5px solid gray; 
+    padding: 10px; 
+    border-radius: 8px;
+} 
+
+.butt {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    
+}
+button {
+    margin-top: 10px;
+} 
+.msg { 
+    margin-top: 4px;
+    font-family: serif; 
+    font-size: 15px;
+    margin-left: 1px;
+    color: red;
+}

@@ -1,8 +1,11 @@
-import {FaTimes} from 'react-icons/fa'
+
 import './index.css'
 
-function FeedbackList({feedbackDetails}) { 
+function FeedbackList({feedbackDetails, deleteItem}) { 
   
+  const onClickDelete = () => {
+    deleteItem(feedbackDetails.uniqueNo)
+  }
 
   return (
     <div className='feedback-bg'> 
@@ -10,7 +13,7 @@ function FeedbackList({feedbackDetails}) {
       <h4 className='name'>{feedbackDetails.name}</h4>
       <p className='role'>{feedbackDetails.role}</p> 
       <p className='feedback'>{feedbackDetails.feedback}</p>
-      
+      <button type="button" onClick={onClickDelete} >Delete</button>
     </div>
   )
 }
