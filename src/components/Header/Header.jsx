@@ -6,43 +6,43 @@ import FeedbackForm from '../FeedbackForm/FeedbackForm'
 const userDetailsList = [
   {
     uniqueNo: 1,
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/esther-howard-img.png',
+    
     name: 'Esther Howard',
     role: 'Software Developer', 
-    feedback: "One of the things I admire about you is your ability to manage a team remotely."
+    feedback: "One of the things I admire about you is your ability to manage a team remotely.",
+    rate:5
   },
   {
     uniqueNo: 2,
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/floyd-miles-img.png',
+    
     name: 'Floyd Miles',
     role: 'Software Developer',
-    feedback: "One of the things I admire about you is your ability to manage a team remotely."
+    feedback: "One of the things I admire about you is your ability to manage a team remotely.",
+    rate:5
   },
   {
     uniqueNo: 3,
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/jacob-jones-img.png',
+    
     name: 'Jacob Jones',
     role: 'Software Developer',
-    feedback: "One of the things I admire about you is your ability to manage a team remotely."
+    feedback: "One of the things I admire about you is your ability to manage a team remotely.",
+    rate:4
   },
   {
     uniqueNo: 4,
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/esther-devon-lane.png',
+    
     name: 'Devon Lane',
     role: 'Software Developer',
-    feedback: "One of the things I admire about you is your ability to manage a team remotely."
+    feedback: "One of the things I admire about you is your ability to manage a team remotely.",
+    rate:5
   },
   {
     uniqueNo: 5,
-    imageUrl:
-      'https://assets.ccbp.in/frontend/react-js/esther-devon-lane.png',
+    
     name: 'Patric Jane',
     role: 'Software Developer',
-    feedback: "One of the things I admire about you is your ability to manage a team remotely."
+    feedback: "One of the things I admire about you is your ability to manage a team remotely.",
+    rate:4
   }
 ]
 
@@ -59,6 +59,10 @@ function Header() {
     }
     
 
+  } 
+
+  const addFeedback = (newFeedback) => {
+    setFeedbacks([newFeedback, ...feedbacks])
   }
   
   return (
@@ -70,7 +74,7 @@ function Header() {
           <h1 className='main-head'>Feedback UI</h1>
         </div>  
         <div className='main-form'>
-          <FeedbackForm />
+          <FeedbackForm addFeedback={addFeedback}/>
         </div>
         
         <div className='feedback-container'> 

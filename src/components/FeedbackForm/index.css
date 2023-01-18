@@ -11,11 +11,12 @@
 
 .rate-head {
     font-family: 'sans-serif'; 
+    text-align: center;
     
 } 
 
 input {
-    width: 40vw; 
+    width: 42vw; 
     outline: none;
     border: 0.5px solid gray; 
     padding: 10px; 
@@ -37,4 +38,57 @@ button {
     font-size: 15px;
     margin-left: 1px;
     color: red;
+} 
+
+.input-card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+} 
+
+.personal-details {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    margin-bottom: 10px;
+} 
+
+.name-input {
+    width: 20vw;
+    margin-right: 9px;
+}
+.btn {
+    color: #ffffff;
+    border: 0; 
+    border-radius: 8px; 
+    color: #ffffff;
+    width: 100px; 
+    height: 40px; 
+    cursor: pointer;
+    background-color: #202142;
+}
+.but {
+    width: 50px;
+    height: 50px;
+    background-color: #cccccc;
+    font-size: 16px;
+    border-radius: 50% ; 
+    margin-right: 5px;
+    
+  } 
+
+
+.rating {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+} 
+
+h3 {
+  margin-right: 15px; 
+  text-align: center;
+  
 }
