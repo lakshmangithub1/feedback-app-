@@ -9,6 +9,7 @@
     width: 60vw; 
     border: 0px solid rgba(0,0,0,0.4); 
     border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 } 
 
@@ -34,4 +35,20 @@
 } 
 .feedback {
     color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}  
+
+.buttu {
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ff6a95;
+    border: 0.25px solid lightgray;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-self: flex-start;
 }
+
+

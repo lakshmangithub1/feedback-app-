@@ -1,0 +1,38 @@
+.about-card {
+    background-color: #ffffff;
+    width: 90%;
+    border: 0px solid #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.about-head {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: #030238;
+    font-weight: bolder;
+    font-size: 25px;
+} 
+
+.about-para {
+    font-family: sans-serif;
+    color: #030238;
+} 
+
+.about-para2 {
+    color:#ff6a95; 
+    font-size: 15px;
+    
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+@media screen and (min-width:768px) {
+    .about-card {
+        width: 40vw;
+    }
+
+}

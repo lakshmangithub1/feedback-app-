@@ -13,7 +13,7 @@ function FeedbackList({feedbackDetails, deleteItem}) {
       <h4 className='name'>{feedbackDetails.name}</h4>
       <p className='role'>{feedbackDetails.role}</p> 
       <p className='feedback'>{feedbackDetails.feedback}</p>
-      <button type="button" onClick={onClickDelete} >Delete</button>
+      <button type="button" onClick={onClickDelete} className='buttu'>Delete</button>
     </div>
   )
 }

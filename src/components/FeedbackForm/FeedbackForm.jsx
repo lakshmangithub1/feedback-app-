@@ -1,6 +1,7 @@
 import './index.css' 
 import {v4 as uuidv4} from 'uuid'
 import { useState } from 'react' 
+import { Link } from 'react-router-dom'
 
 
 function FeedbackForm({addFeedback}) { 
@@ -48,9 +49,12 @@ function FeedbackForm({addFeedback}) {
 
 
 
-    } 
+    }  
+    
     addFeedback(newFeedback) 
-    console.log(newFeedback)
+    setDesignation('') 
+    setName('')
+    setText('')
 
   }
 
@@ -65,22 +69,14 @@ function FeedbackForm({addFeedback}) {
           <input type='text' placeholder='Enter Your Designation' className='name-input' onChange={getTheDesignation} value = {designation}/>  
         </div>
         
-        <div className="rating">
         
-    
-          <input  className="but" type="button" value='1' onClick={getText}/>
-          <input  className="but" type="button" value='2' onClick={getText}/>
-          <input  className="but" type="button" value='3' onClick={getText}/>
-          <input  className="but" type="button" value='4' onClick={getText}/>
-          <input  className="but" type="button" value='5' onClick={getText}/>
-        
-        </div>
         <input type='text' placeholder='Write your feedback' onChange={getTheFeedback} value={text} />  
         {message && <div className="msg">{message}</div>} 
         
         <div className='butt'>
           <button type="submit" onClick={getAll} className="btn">submit</button>
         </div> 
+        <Link to='/about' className='about-boo'>?</Link>
         
         
       </div>
